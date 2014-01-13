@@ -8,7 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "EveryDayViewController.h"
+#import "NaoZhongViewController.h"
+#define ShareApp ((AppDelegate * )[[UIApplication sharedApplication] delegate])
+
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UIAlertViewDelegate>
+
+{
+  
+    
+    
+}
+
+@property (nonatomic ,retain) EveryDayViewController * everyDayViewController;
+@property (nonatomic ,retain) NaoZhongViewController * naoZhongViewController;
+
+@property (nonatomic ,retain) UIViewController * viewController;
 
 @property (strong, nonatomic) UIWindow *window;
 
